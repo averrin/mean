@@ -41,7 +41,7 @@ exports.update = function(req, res){
   article = _.extend(article, req.body)
 
   article.save(function(err) {
-  	res.jsonp(article)
+    res.jsonp(article);
   })
 }
 
@@ -74,7 +74,7 @@ exports.all = function(req, res){
 		if (err) {
 			res.render('error', {status: 500});
 		} else {			
-  			res.jsonp(articles);
+            res.jsonp(articles);
 		}
 	});
 }
