@@ -2,6 +2,26 @@
 html(lang='en', xmlns='http://www.w3.org/1999/xhtml', xmlns:fb='https://www.facebook.com/2008/fbml', itemscope='itemscope', itemtype='http://schema.org/Product')
   include ../includes/head
   body
+    ul#gn-menu.gn-menu-main
+      li.gn-trigger
+        a.gn-icon.gn-icon-menu
+          span Menu
+        nav.gn-menu-wrapper
+          .gn-scroller
+            ul.gn-menu
+              li
+                a.gn-icon.icon-github-circled Проекты
+                ul.gn-submenu
+                  li
+                    a.gn-icon.icon-emo-coffee По работе
+                  li
+                    a.gn-icon.icon-beaker Для души
+
+      li
+        a(href='http://averr.in') Averr.in
+      li
+        a.codrops-icon.codrops-icon-drop(href='http://dev.averr.in')
+          span Home page
     header.navbar.navbar-fixed-top.navbar-inverse(data-ng-include="'views/header.html'")
     section.content
       section.container

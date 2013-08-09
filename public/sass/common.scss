@@ -1,10 +1,20 @@
+html {
+    background: #eee;
+}
+
+body {
+    background-image: url(/img/menu_arrow.png);
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 52px;
+}
+
 .navbar .nav> li > a.brand {
     padding-left: 20px;
     margin-left: 0;
 }
 
 .content {
-    margin-top: 50px;
     width: 100%;
 }
 
@@ -23,3 +33,14 @@ footer p{
      padding: 5px 0 12px 10px;
 }
 
+#gn-menu {
+    box-shadow: 0px 1px 3px rgba(50,50,50,0.35);
+}
+
+.container {
+    margin: 0 auto;
+width: 80%;
+background: #fff;
+padding: 10px;
+min-height: 800px;    
+}
